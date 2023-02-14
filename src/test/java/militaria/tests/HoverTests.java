@@ -20,7 +20,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Bestsellery"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -33,7 +33,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Męskie Prezenty"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -46,7 +46,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Nowości"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -59,7 +59,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Promocje"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -72,7 +72,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Męskie Prezenty"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -85,7 +85,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Karty podarunkowe"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -98,7 +98,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Promocje KSK"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
 
@@ -112,20 +112,7 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Strzelectwo"));
         actions.moveToElement(heading).perform();
-
-    }
-
-    @Test
-    public void performActionSelfDefense() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.militaria.pl/");
-        driver.manage().window().maximize();
-
-        Actions actions = new Actions(driver);
-        WebElement heading = driver.findElement(By.linkText("Samoobrona"));
-        actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
 
     @Test
@@ -138,6 +125,98 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement heading = driver.findElement(By.linkText("Outdoor"));
         actions.moveToElement(heading).perform();
-
+        driver.quit();
     }
+
+    @Test
+    public void performActionAirGunandAccesories() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Wiatrówki i akcesoria"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
+    @Test
+    public void performActionAirSoftGun() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Air Soft Gun"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
+    @Test
+    public void performActionJackets() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Kurtki"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
+    @Test
+    public void performActionTrousers() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Spodnie"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
+    @Test
+    public void performActionMilitaryBoots() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Buty wojskowe"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
+    @Test
+    public void performActionHelmets() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Hełmy i kamizelki kuloodporne"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
+    @Test
+    public void performActionHeadgearAndScarves() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.militaria.pl/");
+        driver.manage().window().maximize();
+
+        Actions actions = new Actions(driver);
+        WebElement heading = driver.findElement(By.linkText("Nakrycia głowy i chusty"));
+        actions.moveToElement(heading).perform();
+        driver.quit();
+    }
+
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class SelectorTests {
+public class SelectorHomeSiteTests {
 
     @Test
     public void findElementsHomePage() {
@@ -20,7 +20,6 @@ public class SelectorTests {
         driver.findElement(By.linkText("Kontakt"));
         driver.findElement(By.linkText("Status zamówienia"));
 
-        driver.findElement(By.className("goog-te-menu-value"));
         driver.findElement(By.className("ksk-header"));
         driver.findElement(By.linkText("Logowanie"));
         driver.findElement(By.className("wishlist"));

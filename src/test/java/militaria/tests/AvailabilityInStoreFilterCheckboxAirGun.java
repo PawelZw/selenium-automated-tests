@@ -1,9 +1,7 @@
 package militaria.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -69,7 +67,7 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.quit();
     }
 
-  /*  @Test
+   @Test
     public void checkboxKrakow() {
 
         WebDriverManager.chromedriver().setup();
@@ -77,7 +75,9 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
-        driver.findElement(By.xpath("#category-sub > div > aside > div.filters.unfold > form > dl:nth-child(3) > dd > a.less-up.blue")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
+        driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1010"));
         System.out.println(checkbox.isSelected());
         checkbox.click();
@@ -93,6 +93,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1020"));
         System.out.println(checkbox.isSelected());
@@ -109,6 +111,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1019"));
         System.out.println(checkbox.isSelected());
@@ -125,6 +129,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1022"));
         System.out.println(checkbox.isSelected());
@@ -141,6 +147,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1008"));
         System.out.println(checkbox.isSelected());
@@ -157,6 +165,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1015"));
         System.out.println(checkbox.isSelected());
@@ -173,6 +183,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1002"));
         System.out.println(checkbox.isSelected());
@@ -189,6 +201,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1018"));
         System.out.println(checkbox.isSelected());
@@ -205,6 +219,8 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml");
 
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/a")).click();
+        JavascriptExecutor jsx = (JavascriptExecutor)driver;
+        jsx.executeScript("window.scrollBy(0,450)", "");
         driver.findElement(By.xpath("//*[@id=\"category-sub\"]/div/aside/div[1]/form/dl[3]/dd/a[1]")).click();
         WebElement checkbox = driver.findElement(By.id("ff-shop-1001"));
         System.out.println(checkbox.isSelected());
@@ -212,5 +228,5 @@ public class AvailabilityInStoreFilterCheckboxAirGun {
         System.out.println(checkbox.isSelected());
         driver.quit();
 
-    } */
+    }
 }

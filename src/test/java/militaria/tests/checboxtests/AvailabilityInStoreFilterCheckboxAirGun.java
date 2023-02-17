@@ -1,4 +1,4 @@
-package militaria.tests;
+package militaria.tests.checboxtests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;

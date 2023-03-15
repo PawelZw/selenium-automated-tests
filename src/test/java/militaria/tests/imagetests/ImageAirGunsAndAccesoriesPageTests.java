@@ -21,8 +21,10 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[1]/li[1]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -33,8 +35,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[1]/li[2]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "55");
         driver.quit();
     }
 
@@ -45,8 +48,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[1]/li[3]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "55");
         driver.quit();
     }
 
@@ -57,8 +61,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[1]/li[4]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "55");
         driver.quit();
     }
 
@@ -69,8 +74,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[2]/li[1]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -81,8 +87,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[2]/li[2]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -93,8 +100,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[2]/li[3]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -105,8 +113,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[2]/li[4]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -117,8 +126,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[3]/li[1]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -129,8 +139,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[3]/li[2]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "36");
         driver.quit();
     }
 
@@ -141,8 +152,9 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
 
         WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[3]/li[3]/div/a/img"));
-        String height = image.getAttribute("naturalHeight");
-        Assert.assertEquals("height", "height");
+        String height = image.getAttribute("height");
+        System.out.println(height);
+        Assert.assertEquals(height, "55");
         driver.quit();
     }
 

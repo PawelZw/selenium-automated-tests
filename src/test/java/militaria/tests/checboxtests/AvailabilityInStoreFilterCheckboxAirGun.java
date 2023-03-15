@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 
 public class AvailabilityInStoreFilterCheckboxAirGun {
 
+    /** Tests for the appearance of checkboxes in the Air Gun site filtering category: Availability in store
+     *  in the tab https://www.militaria.pl/wiatrowki_i_akcesoria/wiatrowki_karabinki_c111.xml **/
+
     @Test
     public void checkboxWebShop() {
 

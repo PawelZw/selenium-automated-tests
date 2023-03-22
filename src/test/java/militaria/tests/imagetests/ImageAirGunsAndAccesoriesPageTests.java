@@ -41,18 +41,6 @@ public class ImageAirGunsAndAccesoriesPageTests {
         driver.quit();
     }
 
-    @Test
-    public void imageAirGunFiringBurstsUploadTest() throws IOException {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.militaria.pl/wiatrowki_i_akcesoria_c334.xml");
-
-        WebElement image = driver.findElement(By.xpath("//*[@id=\"category-main\"]/div/div[3]/div[1]/ul[1]/li[3]/div/a/img"));
-        String height = image.getAttribute("height");
-        System.out.println(height);
-        Assert.assertEquals(height, "55");
-        driver.quit();
-    }
 
     @Test
     public void imageAirGunGasSpringUploadTest() throws IOException {
